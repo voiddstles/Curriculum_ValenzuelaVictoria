@@ -3,6 +3,8 @@ body {
     font-family: Arial, sans-serif;
     color: deeppink; 
     margin: 20px;
+    padding: 10px;
+    border: 2px solid;
 }
 
 nav, header, main, footer {
@@ -10,6 +12,7 @@ nav, header, main, footer {
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
+    overflow: auto;
 }
 
 nav a {
@@ -17,14 +20,43 @@ nav a {
     text-decoration: none;
     color: deeppink;
     font-weight: bold;
+    display: inline-block;
+    padding: 5px;
+}
+nav a:hover{
+    color: white;
+    background-color: magenta;
+    border-radius: 4px;
 }
 
-h1, h2 {
+h1 {
     color: #a83279; 
     text-align: center;
 }
 
+h1::after{
+    content: " <3 ";
+}
+
+h2{
+    color: #a83279;
+    text-align:center;
+}
+
+h2::before{
+    content: " :) ";
+}
+
+img{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid;
+    padding: 5px;
+}
 footer {
     text-align: center;
     padding: 10px;
+    display: block;
 }
